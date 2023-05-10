@@ -7,7 +7,6 @@ target/
 *.iml
 
 # Logs
-allure-results/
 logs/
 build/
 *.log

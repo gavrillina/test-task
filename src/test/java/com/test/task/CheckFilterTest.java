@@ -8,6 +8,7 @@ import com.test.task.enums.filterpanel.CheckBoxName;
 import com.test.task.pajeobject.MainPage;
 import com.test.task.pajeobject.SearchResultPage;
 import com.test.task.pajeobject.element.FilterPanel;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class CheckFilterTest extends BaseTest {
@@ -15,6 +16,7 @@ public class CheckFilterTest extends BaseTest {
     private static final CheckBoxName checkBoxName= getRandomCheckBox();
     private static final ButtonName buttonName = getRandomButton();
 
+    @Description(" Check filter panel test")
     @Test(testName = "Check filter panel test")
     public void checkFilterTest() {
         new MainPage().clickOnSearchButton();
